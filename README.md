@@ -4,6 +4,7 @@ The web server is Express, and is OpenShift-ready, however...
 When trying to bundle the application with "jspm bundle-sfx public/server/web/index app.js" there is an error:
 
 => jspm bundle-sfx public/server/web/index app.js
+
      Building the single-file sfx bundle for public/server/web/index...
 
 err  Error on fetch for babel-core/register.js at file:///Users/sellis/projects/javascript/sample-es6-jspm-react-app/babel-core/register.js
