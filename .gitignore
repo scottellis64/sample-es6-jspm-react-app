@@ -7,4 +7,4 @@
 
 # Ignore managed packages
 node_modules
-public/jspm_packages
+jspm_packages

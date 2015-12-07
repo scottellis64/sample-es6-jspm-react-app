@@ -1,1 +1,0 @@
-module.exports = require("npm:ipaddr.js@1.0.4/lib/ipaddr");
