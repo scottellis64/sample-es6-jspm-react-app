@@ -1,16 +1,26 @@
+This is a sample ReactJS application that uses ES6 with the Babel transpiler.
+The web server is Express, and is OpenShift-ready, however...
 
-Had some trouble 
+When trying to bundle the application with "jspm bundle-sfx public/server/web/index app.js" there is an error:
 
-1 - rhc ssh proyect-name
-2 - cd nodejs
-3 - npm install bower
-4 - cd ..
-5 - export HOME=$HOME/app-root/runtime/repo
-6 - cd app-root/repo
-7 - bower install
+=> jspm bundle-sfx public/server/web/index app.js
+     Building the single-file sfx bundle for public/server/web/index...
 
-git remote add openshift -f ssh://56620ad37628e1dd790000f4@belliesbanglesapp-jsellis.rhcloud.com/~/git/belliesbanglesapp.git/
-git merge openshift/master -s recursive -X ours
-git push openshift HEAD
+err  Error on fetch for babel-core/register.js at file:///Users/sellis/projects/javascript/sample-es6-jspm-react-app/babel-core/register.js
+	Loading public/server/web/index.js
+	Error: ENOENT: no such file or directory, open '/Users/sellis/projects/javascript/sample-es6-jspm-react-app/babel-core/register.js'
+         at Error (native)
 
-# sample-es6-jspm-react-app
+The application works perfectly when run normally, but the bundler fails.
+
+Build:
+npm install
+
+Run:
+npm start
+
+
+
+
+
+
