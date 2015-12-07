@@ -1,0 +1,10 @@
+# Ignore editor artifacts
+.idea
+*.iml
+
+# Ignore Mac generated folders
+.DS_Store
+
+# Ignore managed packages
+node_modules
+public/jspm_packages

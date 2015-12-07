@@ -1,0 +1,39 @@
+{
+  "name": "bellies-bangles",
+  "version": "1.0.0",
+  "description": "Sample ES6/ReactJS Application",
+  "author": "J. Scott Ellis",
+  "scripts": {
+    "start": "node public/server/web/index.js",
+    "postinstall": "jspm install"
+  },
+  "main": "public/server/web/index.js",
+  "jspm": {
+    "directories": {
+      "app": "public/client/app",
+      "view": "public/client/app/view"
+    },
+    "dependencies": {
+      "babel": "npm:babel-core@5.8.29",
+      "cors": "npm:cors@^2.7.1",
+      "express": "npm:express@^4.13.3",
+      "react": "npm:react@^0.14.2",
+      "react-dom": "npm:react-dom@^0.14.2",
+      "systemjs": "npm:systemjs@^0.19.5"
+    },
+    "devDependencies": {
+      "babel-runtime": "npm:babel-runtime@^5.8.29",
+      "core-js": "npm:core-js@^1.1.4"
+    }
+  },
+  "devDependencies": {
+    "jspm": "^0.16.14"
+  },
+  "dependencies": {
+    "babel": "^5.8.29",
+    "cors": "^2.7.1",
+    "express": "^4.13.3",
+    "jade": "^1.11.0",
+    "systemjs": "^0.19.5"
+  }
+}
