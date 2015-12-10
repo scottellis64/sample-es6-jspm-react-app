@@ -5,7 +5,9 @@
   "author": "J. Scott Ellis",
   "scripts": {
     "start": "node public/server/web/index.js",
-    "postinstall": "jspm install"
+    "jspm": "node_modules/.bin/jspm",
+    "bundle": "npm run jspm bundle-sfx public/server/web/index app.js",
+    "postinstall": "npm run jspm install"
   },
   "main": "public/server/web/index.js",
   "jspm": {
@@ -31,6 +33,7 @@
   },
   "dependencies": {
     "babel": "^5.8.29",
+    "babel-core": "^5.8.29",
     "cors": "^2.7.1",
     "express": "^4.13.3",
     "jade": "^1.11.0",
